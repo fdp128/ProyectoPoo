@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head>    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; height: 100%; }  
+</style></head>
+<body> 
+<div id = 'map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamVmbGphcmEiLCJhIjoiY2s2NXdiY2RtMTAwNzNvbzgyZWN5Y2FyOCJ9.iNdss6wcv0oAM_aZ-9Ch8A';
+
+var map = new mapboxgl.Map({
+
+container: 'map',
+
+ style: 'mapbox://styles/mapbox/streets-v9',
+
+ center: [-78.496579,-0.207371],
+
+ zoom: 13
+
+ });
+
+var marker0 = new mapboxgl.Marker()
+.setLngLat([-78.498003,-0.2084765])
+.setPopup(new mapboxgl.Popup({ offset: 25 })
+.setHTML('****'))
+.addTo(map);
+var marker1 = new mapboxgl.Marker()
+.setLngLat([-78.497561,-0.206963])
+.setPopup(new mapboxgl.Popup({ offset: 25 })
+.setHTML('Filatelia Apart Hotel Quito'))
+.addTo(map);
+var marker2 = new mapboxgl.Marker()
+.setLngLat([-78.496579,-0.207371])
+.setPopup(new mapboxgl.Popup({ offset: 25 })
+.setHTML('Hilton Colón Quito'))
+.addTo(map);
+var marker3 = new mapboxgl.Marker()
+.setLngLat([-78.494035,-0.210921])
+.setPopup(new mapboxgl.Popup({ offset: 25 })
+.setHTML('Hotel Tambo Real'))
+.addTo(map);
+var marker4 = new mapboxgl.Marker()
+.setLngLat([-78.495172,-0.204446])
+.setPopup(new mapboxgl.Popup({ offset: 25 })
+.setHTML('ALAMEDA Hotel Mercure'))
+.addTo(map);
+var marker5 = new mapboxgl.Marker()
+.setLngLat([-78.502256,-0.204696])
+.setPopup(new mapboxgl.Popup({ offset: 25 })
+.setHTML('Hotel Internacional Ecuador'))
+.addTo(map);
+</script></body></html>
